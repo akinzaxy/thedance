@@ -1,12 +1,14 @@
-var events = require('events');
-var util = require('util');
-var fs = require('fs');
+// var events = require('events');
+// var util = require('util');
+// var fs = require('fs');
+
+// disclaimer: I'm not entirely sure this implimentation can be done with js alone!
 
 var Pesin = function(yaname){
   this.yaname = yaname;
 }
 
-util.inherits(Pesin, events.EventEmitter);
+// util.inherits(Pesin, events.EventEmitter);
 
 var shola = new Pesin('shola');
 var peculiar = new Pesin('peculiar');
@@ -67,4 +69,4 @@ setInterval(oyolowa, 1000);
 var towrite1 = 'The following are the dances:';
 // var towrite2 = dancelog;
 
-fs.writeFile('danceCount.txt', '')
+// fs.writeFile('danceCount.txt', '')
