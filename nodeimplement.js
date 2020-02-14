@@ -16,9 +16,8 @@ var maPipo = [shola, peculiar, eazy];
 var dancelog;
 maPipo.forEach(function(pesin){
   pesin.on('sekini', function(kinitose){
-    // var tolog = pesin.yaname + ' has now' + kinitose + 'ed';
-    // console.log(tolog);
-    console.log(pesin.yaname + ' has now ' + kinitose + 'ed')
+    var tolog = pesin.yaname + ' has now ' + kinitose + 'ed';
+    console.log(tolog);
   })
 })
 
@@ -67,4 +66,4 @@ setInterval(oyolowa, 1000);
 var towrite1 = 'The following are the dances:';
 // var towrite2 = dancelog;
 
-fs.writeFile('danceCount.txt', '')
+fs.writeFileSync('danceCount.txt', '');
